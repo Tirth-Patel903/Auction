@@ -1,0 +1,57 @@
+﻿<%@ Master Language="VB" CodeFile="Auction.master.vb" Inherits="Auction" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color: #FFFFFF">
+    <form id="form1" runat="server">
+    <div>
+        <table style="width: 100%; height: 98px;">
+            <tr>
+                <td>
+                    <asp:Image ID="Image1" runat="server" Height="150px" 
+                        ImageUrl="~/image/auction-guy.png" style="text-align: center" 
+                        Width="1360px" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Menu ID="Menu1" runat="server" Height="21px" Orientation="Horizontal" 
+                        Width="1360px">
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/Home.aspx" Text="HOME" Value="HOME">
+                                <asp:MenuItem NavigateUrl="~/ITEMSDISP.aspx" Text="ITEMS" 
+                                    Value="ITEMS"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/login.aspx" Text="BID" Value="BID">
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Registration.aspx" Text="REGISTRATION" 
+                                Value="REGISTRATION"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/login.aspx" Text="LOGIN IN " Value="LOGIN IN ">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/About us.aspx" Text="ABOUT US" Value="ABOUT US">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Feedback.aspx" Text="FEEDBACK" Value="FEEDBACK">
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="LOGOUT" Value="LOGOUT"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <div>
+    </div>
+    </form>
+</body>
+</html>
